@@ -1,46 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Personal Form</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-</Div>First name <input type="name" placeholder="first name"></Div>
-    </Div>Last name <input type="name" placeholder="last name"> </Div>
-    <br>
-    <br>
-    <Div>Age
-        <select>
-            <option value="19">19</option>
-            <option value="20">20</option>
-            <option value="21">21</option>
-            <option value="22">22</option>
-            <option value="23">23</option>
-            <option value="24">24</option>
+
+  <div class="form-container">
+    <h2>Test Form</h2>
+    <form>
+      <div class="form-group">
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" name="first-name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="last-name">Last Name:</label>
+        <input type="text" id="last-name" name="last-name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender">
+          <option value="">Select</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
         </select>
-    </Div>
-    <br>
-    <br>
-    <Div>Gender
-    <input type="checkbox" value="Gender" name="Male" id="101">Male
-    <input type="checkbox" value="Gender" name="Female" id="102">Female</Div>
-    <br>
-    <br>
-    <div>Choice
-    <select name="Hobby">
-        <option value="Cricket">cricket</option>
-        <option value="Football">Football</option>
+      </div>
+
+      <div class="form-group">
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="0">
+      </div>
+
+      <div class="form-group">
+        <label for="hobby">Hobby:</label>
+        <select id="hobby" name="Hobby">
         <option value="Running">Running</option>
-        <option value="Coding">Coding</option></select></div>
-        <br>
-        <br>
-        <Div>Address</Div>
-        <input type="text" placeholder="type address">
-        <br>
-        <br>
-        <br>
-        <input id="301" type="submit" value="submit">
+        <option value="Cricket">Cricket</option>
+        <option value="Coding">Codingt</option>
+        <option value="Football">Football</option>
+    </select>
+      </div>
+
+      <div class="form-group">
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="3"></textarea>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
 </body>
 </html>
